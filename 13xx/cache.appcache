@@ -1,0 +1,22 @@
+CACHE MANIFEST
+# rev 20260921-13xx
+
+index.html
+jb.html
+background13xx.png
+jb.js
+jb.js?v=10
+core.js
+core.js?v=10
+mem.js
+int64.js
+ps4_offsets.js
+rpc_worker.js
+GoldHEN_v2.4b18.12.bin
+style.css
+patches/1302.bin
+patches/1350.bin
+patches/1352.bin
+
+NETWORK:
+*

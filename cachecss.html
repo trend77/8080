@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html manifest="css.manifest">
+<head>
+<title>PS4 7.00 - 13.00 FW GoldHEN Host by GameStop02</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    background-image: url("background.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+    background-color: #05030a;
+    overflow: hidden;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.12);
+    pointer-events: none;
+    z-index: 0;
+}
+body > * {
+    position: relative;
+    z-index: 1;
+}
+h1 {
+    text-shadow: 0 2px 8px rgba(0,0,0,.8);
+}
+#msgs {
+    /* Keeps the top-center area clear for the jailbreak/loading process. */
+    width: min(760px, 80vw);
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+}
+</style>
+
+</head>
+<body>
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="...تثبيت الكاش للعمل دون اتصال: " + Percent + "%";}
+function DisplayCacheProgress(){window.msgs.innerHTML="✔✔ تم تثبيت الكاش بنجاح";setTimeout(function(){window.msgs.innerHTML="...الآن أغلق المتصفح وأعد فتحه.";},1500);}
+window.applicationCache.addEventListener("progress",DLProgress,false);
+window.applicationCache.oncached=function(e){DisplayCacheProgress();};
+window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+window.applicationCache.onerror=function(e){window.msgs.innerHTML="...خطأ أثناء تثبيت الكاش! — امسح الكاش وأعد فتح المتصفح";};
+</script>
+<h1 style="margin-top: 30px;">PS4 7.00 - 13.00 FW GoldHEN Host by GameStop02</h1>
+<br>
+<h1 id="msgs" class="rainbow-text" style="font-size: 30px; margin-top: 77px; margin-bottom: 455px;">
+...جارٍ بدء تثبيت الكاش
+</body>
+</html>
